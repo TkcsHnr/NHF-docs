@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>BoundingBox - Síkidomok dokumentáció</title>
+    <title>utils.h - Síkidomok dokumentáció</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "BoundingBox";
-        var mkdocs_page_input_path = "Classes\\struct_bounding_box.md";
+        var mkdocs_page_name = "utils.h";
+        var mkdocs_page_input_path = "Files\\utils_8h.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -44,38 +44,22 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Classes</span></p>
-              <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../class_circle/">Circle</a>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Classes/class_circle/">Circle</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../class_polygon/">Polygon</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Classes/class_polygon/">Polygon</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../class_regular_polygon/">RegularPolygon</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Classes/class_regular_polygon/">RegularPolygon</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../class_shape/">Shape</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Classes/class_shape/">Shape</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../class_shape_collection/">ShapeCollection</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Classes/class_shape_collection/">ShapeCollection</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../class_vector2_d/">Vector2D</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Classes/class_vector2_d/">Vector2D</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../classvector/">vector</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Classes/classvector/">vector</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">BoundingBox</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#public-attributes">Public Attributes</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#public-attributes-documentation">Public Attributes Documentation</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#variable-minx">variable minX</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#variable-miny">variable minY</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#variable-maxx">variable maxX</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#variable-maxy">variable maxY</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Classes/struct_bounding_box/">BoundingBox</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Namespaces</span></p>
@@ -97,8 +81,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Classes</li>
-      <li class="breadcrumb-item active">BoundingBox</li>
+      <li class="breadcrumb-item active">utils.h</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -107,62 +90,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="boundingbox">BoundingBox</h1>
-<p>A bounding box structure for shapes. </p>
-<p><code>#include &lt;shape.h&gt;</code></p>
-<h2 id="public-attributes">Public Attributes</h2>
+                <h1 id="utilsh">utils.h</h1>
+<h2 id="namespaces">Namespaces</h2>
 <table>
 <thead>
 <tr>
-<th></th>
 <th>Name</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>double</td>
-<td><strong><a href="/NHF-docs/Classes/struct_bounding_box/#variable-minx">minX</a></strong></td>
-</tr>
-<tr>
-<td>double</td>
-<td><strong><a href="/NHF-docs/Classes/struct_bounding_box/#variable-miny">minY</a></strong></td>
-</tr>
-<tr>
-<td>double</td>
-<td><strong><a href="/NHF-docs/Classes/struct_bounding_box/#variable-maxx">maxX</a></strong></td>
-</tr>
-<tr>
-<td>double</td>
-<td><strong><a href="/NHF-docs/Classes/struct_bounding_box/#variable-maxy">maxY</a></strong></td>
+<td><strong><a href="/NHF-docs/Namespaces/namespacecp/">cp</a></strong></td>
 </tr>
 </tbody>
 </table>
-<h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
-<h3 id="variable-minx">variable minX</h3>
-<pre><code class="language-cpp">double minX;
-</code></pre>
-<p>Minimum X-coordinate </p>
-<h3 id="variable-miny">variable minY</h3>
-<pre><code class="language-cpp">double minY;
-</code></pre>
-<p>Minimum Y-coordinate </p>
-<h3 id="variable-maxx">variable maxX</h3>
-<pre><code class="language-cpp">double maxX;
-</code></pre>
-<p>Maximum X-coordinate </p>
-<h3 id="variable-maxy">variable maxY</h3>
-<pre><code class="language-cpp">double maxY;
-</code></pre>
-<p>Maximum Y-coordinate </p>
 <hr />
 <p>Updated on 2025-05-18 at 19:48:57 +0200</p>
               
             </div>
           </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../classvector/" class="btn btn-neutral float-left" title="vector"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../Namespaces/namespacecp/" class="btn btn-neutral float-right" title="cp">Next <span class="icon icon-circle-arrow-right"></span></a>
-    </div>
 
   <hr/>
 
@@ -184,10 +130,6 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../classvector/" style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../../Namespaces/namespacecp/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

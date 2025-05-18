@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>cp - Síkidomok dokumentáció</title>
+    <title>test.cpp - Síkidomok dokumentáció</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "cp";
-        var mkdocs_page_input_path = "Namespaces\\namespacecp.md";
+        var mkdocs_page_name = "test.cpp";
+        var mkdocs_page_input_path = "Files\\test_8cpp.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -63,18 +63,8 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Namespaces</span></p>
-              <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">cp</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#functions">Functions</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#functions-documentation">Functions Documentation</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#function-getline">function getline</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Namespaces/namespacecp/">cp</a>
                   </li>
               </ul>
       </div>
@@ -91,8 +81,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Namespaces</li>
-      <li class="breadcrumb-item active">cp</li>
+      <li class="breadcrumb-item active">test.cpp</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -101,7 +90,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="cp">cp</h1>
+                <h1 id="testcpp">test.cpp</h1>
 <h2 id="functions">Functions</h2>
 <table>
 <thead>
@@ -112,34 +101,102 @@
 </thead>
 <tbody>
 <tr>
-<td>std::istream &amp;</td>
-<td><strong><a href="/NHF-docs/Namespaces/namespacecp/#function-getline">getline</a></strong>(std::istream &amp; is, std::string &amp; str)<br>Cross-platform version of std::getline.</td>
+<td>void</td>
+<td><strong><a href="/NHF-docs/Files/test_8cpp/#function-testvector2d">testVector2D</a></strong>()<br>Tests the functionality of the <a href="/NHF-docs/Classes/class_vector2_d/">Vector2D</a> class.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/NHF-docs/Files/test_8cpp/#function-testcustomvector">testCustomVector</a></strong>()<br>Tests the custom vector implementation.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/NHF-docs/Files/test_8cpp/#function-testcpgetline">testCpGetline</a></strong>()<br>Tests the custom getline function cp::getline.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/NHF-docs/Files/test_8cpp/#function-testcircle">testCircle</a></strong>()<br>Tests the <a href="/NHF-docs/Classes/class_circle/">Circle</a> class.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/NHF-docs/Files/test_8cpp/#function-testpolygon">testPolygon</a></strong>()<br>Tests the <a href="/NHF-docs/Classes/class_polygon/">Polygon</a> class.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/NHF-docs/Files/test_8cpp/#function-testregularpolygon">testRegularPolygon</a></strong>()<br>Tests the <a href="/NHF-docs/Classes/class_regular_polygon/">RegularPolygon</a> class.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/NHF-docs/Files/test_8cpp/#function-testcollection">testCollection</a></strong>()<br>Tests the <a href="/NHF-docs/Classes/class_shape_collection/">ShapeCollection</a> class.</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="/NHF-docs/Files/test_8cpp/#function-main2">main2</a></strong>()</td>
+</tr>
+</tbody>
+</table>
+<h2 id="defines">Defines</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href="/NHF-docs/Files/test_8cpp/#define--use-math-defines">_USE_MATH_DEFINES</a></strong></td>
 </tr>
 </tbody>
 </table>
 <h2 id="functions-documentation">Functions Documentation</h2>
-<h3 id="function-getline">function getline</h3>
-<pre><code class="language-cpp">std::istream &amp; getline(
-    std::istream &amp; is,
-    std::string &amp; str
-)
+<h3 id="function-testvector2d">function testVector2D</h3>
+<pre><code class="language-cpp">void testVector2D()
 </code></pre>
-<p>Cross-platform version of std::getline. </p>
-<p><strong>Parameters</strong>: </p>
-<ul>
-<li><strong>is</strong> The input stream to read from. </li>
-<li><strong>str</strong> The string where the line will be stored. </li>
-</ul>
-<p><strong>Return</strong>: Reference to the input stream. </p>
-<p>Reads a line from the input stream, handling both Unix (<code>\n</code>) and Windows (<code>\r\n</code>) line endings.</p>
+<p>Tests the functionality of the <a href="/NHF-docs/Classes/class_vector2_d/">Vector2D</a> class. </p>
+<p>This function verifies constructors, operators, and methods like addition, subtraction, scalar multiplication, magnitude, distance, dot product, rotation, closest point calculation, and stream extraction. </p>
+<h3 id="function-testcustomvector">function testCustomVector</h3>
+<pre><code class="language-cpp">void testCustomVector()
+</code></pre>
+<p>Tests the custom vector implementation. </p>
+<p>Verifies constructors, push_back, resizing, copy and assignment, access, exception safety, clearing, and iteration functionality. </p>
+<h3 id="function-testcpgetline">function testCpGetline</h3>
+<pre><code class="language-cpp">void testCpGetline()
+</code></pre>
+<p>Tests the custom getline function cp::getline. </p>
+<p>Checks handling of different line endings including CR, LF, CRLF, empty lines, and multiple lines. </p>
+<h3 id="function-testcircle">function testCircle</h3>
+<pre><code class="language-cpp">void testCircle()
+</code></pre>
+<p>Tests the <a href="/NHF-docs/Classes/class_circle/">Circle</a> class. </p>
+<p>Tests constructors, clone, point containment, circle intersection and circle containment, perimeter, area, transformations (rotate, move), bounding box calculation, SVG generation, and stream extraction. </p>
+<h3 id="function-testpolygon">function testPolygon</h3>
+<pre><code class="language-cpp">void testPolygon()
+</code></pre>
+<p>Tests the <a href="/NHF-docs/Classes/class_polygon/">Polygon</a> class. </p>
+<p>Tests constructors, adding points, cloning, point containment, containment and intersection with circles, perimeter, area, transformations, bounding box, SVG generation, and stream extraction. </p>
+<h3 id="function-testregularpolygon">function testRegularPolygon</h3>
+<pre><code class="language-cpp">void testRegularPolygon()
+</code></pre>
+<p>Tests the <a href="/NHF-docs/Classes/class_regular_polygon/">RegularPolygon</a> class. </p>
+<p>Tests constructors, cloning, perimeter and area calculations, stream extraction, and vertex generation for known polygons. </p>
+<h3 id="function-testcollection">function testCollection</h3>
+<pre><code class="language-cpp">void testCollection()
+</code></pre>
+<p>Tests the <a href="/NHF-docs/Classes/class_shape_collection/">ShapeCollection</a> class. </p>
+<p>Verifies push_back, size, capacity, operator access, deep copy (copy constructor and assignment operator), and SVG printing. </p>
+<h3 id="function-main2">function main2</h3>
+<pre><code class="language-cpp">int main2()
+</code></pre>
+<h2 id="macros-documentation">Macros Documentation</h2>
+<h3 id="define-_use_math_defines">define _USE_MATH_DEFINES</h3>
+<pre><code class="language-cpp">#define _USE_MATH_DEFINES 
+</code></pre>
 <hr />
 <p>Updated on 2025-05-18 at 19:48:57 +0200</p>
               
             </div>
           </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../Classes/struct_bounding_box/" class="btn btn-neutral float-left" title="BoundingBox"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-    </div>
 
   <hr/>
 
@@ -160,8 +217,6 @@
   <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
-    
-      <span><a href="../../Classes/struct_bounding_box/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
   </span>
