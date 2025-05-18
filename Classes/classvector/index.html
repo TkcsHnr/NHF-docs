@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>vector - Síkidomok dokumentáció</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "vector";
+        var mkdocs_page_input_path = "Classes\\classvector.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Síkidomok dokumentáció
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index_classes/">Classes</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index_namespaces/">Namespaces</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Síkidomok dokumentáció</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">vector</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="vector">vector</h1>
+<p>A simple dynamic array class template, similar to std::vector.  <a href="#detailed-description">More...</a></p>
+<p><code>#include &lt;vector.hpp&gt;</code></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href="/Classes/classvector/#function-vector">vector</a></strong>()<br>Default constructor. Initializes an empty vector.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/Classes/classvector/#function-vector">vector</a></strong>(size_t capacity)<br>Constructs a vector with a given capacity.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/Classes/classvector/#function-vector">vector</a></strong>(const <a href="/Classes/classvector/">vector</a> &amp; other)<br>Copy constructor.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/Classes/classvector/#function-push-back">push_back</a></strong>(const T &amp; element)<br>Adds an element to the end of the vector.</td>
+</tr>
+<tr>
+<td>T &amp;</td>
+<td><strong><a href="/Classes/classvector/#function-operator[]">operator[]</a></strong>(size_t idx)<br>Provides access to element at given index with bounds checking.</td>
+</tr>
+<tr>
+<td>const T &amp;</td>
+<td><strong><a href="/Classes/classvector/#function-operator[]">operator[]</a></strong>(size_t idx) const<br>Provides const access to element at given index with bounds checking.</td>
+</tr>
+<tr>
+<td><a href="/Classes/classvector/">vector</a>&lt; T &gt; &amp;</td>
+<td><strong><a href="/Classes/classvector/#function-operator=">operator=</a></strong>(const <a href="/Classes/classvector/">vector</a> &amp; other)<br>Assignment operator for deep copying.</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="/Classes/classvector/#function-capacity">capacity</a></strong>() const<br>Getter for capacity.</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="/Classes/classvector/#function-size">size</a></strong>() const<br>Getter for size.</td>
+</tr>
+<tr>
+<td>T *</td>
+<td><strong><a href="/Classes/classvector/#function-begin">begin</a></strong>()<br>Iterator to the beginning of the vector.</td>
+</tr>
+<tr>
+<td>T *</td>
+<td><strong><a href="/Classes/classvector/#function-end">end</a></strong>()<br>Iterator to the end of the vector.</td>
+</tr>
+<tr>
+<td>const T *</td>
+<td><strong><a href="/Classes/classvector/#function-begin">begin</a></strong>() const<br>Const iterator to the beginning of the vector.</td>
+</tr>
+<tr>
+<td>const T *</td>
+<td><strong><a href="/Classes/classvector/#function-end">end</a></strong>() const<br>Const iterator to the end of the vector.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/Classes/classvector/#function-clear">clear</a></strong>()<br>Clears the contents of the vector.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/Classes/classvector/#function-resize">resize</a></strong>(size_t newCapacity)<br>Resizes the vector to a new capacity.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/Classes/classvector/#function-~vector">~vector</a></strong>()<br>Destructor. Clears and deallocates the vector.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="detailed-description">Detailed Description</h2>
+<pre><code class="language-cpp">template &lt;typename T &gt;
+class vector;
+</code></pre>
+<p>A simple dynamic array class template, similar to std::vector. </p>
+<p><strong>Template Parameters</strong>: </p>
+<ul>
+<li><strong>T</strong> Type of elements stored in the vector. </li>
+</ul>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-vector">function vector</h3>
+<pre><code class="language-cpp">inline vector()
+</code></pre>
+<p>Default constructor. Initializes an empty vector. </p>
+<h3 id="function-vector_1">function vector</h3>
+<pre><code class="language-cpp">inline vector(
+    size_t capacity
+)
+</code></pre>
+<p>Constructs a vector with a given capacity. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>capacity</strong> Initial capacity of the vector. </li>
+</ul>
+<h3 id="function-vector_2">function vector</h3>
+<pre><code class="language-cpp">inline vector(
+    const vector &amp; other
+)
+</code></pre>
+<p>Copy constructor. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>other</strong> Vector to copy from. </li>
+</ul>
+<h3 id="function-push_back">function push_back</h3>
+<pre><code class="language-cpp">inline void push_back(
+    const T &amp; element
+)
+</code></pre>
+<p>Adds an element to the end of the vector. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>element</strong> Element to be added. </li>
+</ul>
+<h3 id="function-operator">function operator[]</h3>
+<pre><code class="language-cpp">inline T &amp; operator[](
+    size_t idx
+)
+</code></pre>
+<p>Provides access to element at given index with bounds checking. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>idx</strong> Index of the element. </li>
+</ul>
+<p><strong>Exceptions</strong>: </p>
+<ul>
+<li><strong>std::out_of_range</strong> if index is invalid. </li>
+</ul>
+<p><strong>Return</strong>: Reference to the element at the specified index. </p>
+<h3 id="function-operator_1">function operator[]</h3>
+<pre><code class="language-cpp">inline const T &amp; operator[](
+    size_t idx
+) const
+</code></pre>
+<p>Provides const access to element at given index with bounds checking. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>idx</strong> Index of the element. </li>
+</ul>
+<p><strong>Exceptions</strong>: </p>
+<ul>
+<li><strong>std::out_of_range</strong> if index is invalid. </li>
+</ul>
+<p><strong>Return</strong>: Const reference to the element at the specified index. </p>
+<h3 id="function-operator_2">function operator=</h3>
+<pre><code class="language-cpp">inline vector&lt; T &gt; &amp; operator=(
+    const vector &amp; other
+)
+</code></pre>
+<p>Assignment operator for deep copying. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>other</strong> vector to copy from. </li>
+</ul>
+<p><strong>Return</strong>: Reference to this vector. </p>
+<h3 id="function-capacity">function capacity</h3>
+<pre><code class="language-cpp">inline size_t capacity() const
+</code></pre>
+<p>Getter for capacity. </p>
+<p><strong>Return</strong>: Maximum number of elements that can be stored. </p>
+<h3 id="function-size">function size</h3>
+<pre><code class="language-cpp">inline size_t size() const
+</code></pre>
+<p>Getter for size. </p>
+<p><strong>Return</strong>: The number of stored elements in the vector. </p>
+<h3 id="function-begin">function begin</h3>
+<pre><code class="language-cpp">inline T * begin()
+</code></pre>
+<p>Iterator to the beginning of the vector. </p>
+<p><strong>Return</strong>: Pointer to the first element. </p>
+<h3 id="function-end">function end</h3>
+<pre><code class="language-cpp">inline T * end()
+</code></pre>
+<p>Iterator to the end of the vector. </p>
+<p><strong>Return</strong>: Pointer to one-past-the-last element. </p>
+<h3 id="function-begin_1">function begin</h3>
+<pre><code class="language-cpp">inline const T * begin() const
+</code></pre>
+<p>Const iterator to the beginning of the vector. </p>
+<p><strong>Return</strong>: Const pointer to the first element. </p>
+<h3 id="function-end_1">function end</h3>
+<pre><code class="language-cpp">inline const T * end() const
+</code></pre>
+<p>Const iterator to the end of the vector. </p>
+<p><strong>Return</strong>: Const pointer to one-past-the-last element. </p>
+<h3 id="function-clear">function clear</h3>
+<pre><code class="language-cpp">inline void clear()
+</code></pre>
+<p>Clears the contents of the vector. </p>
+<p>Destroys all elements (if not pointers) and resets the size to zero. </p>
+<h3 id="function-resize">function resize</h3>
+<pre><code class="language-cpp">inline void resize(
+    size_t newCapacity
+)
+</code></pre>
+<p>Resizes the vector to a new capacity. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>newCapacity</strong> The new capacity to allocate. </li>
+</ul>
+<p>Copies existing elements up to the new capacity.</p>
+<h3 id="function-vector_3">function ~vector</h3>
+<pre><code class="language-cpp">inline ~vector()
+</code></pre>
+<p>Destructor. Clears and deallocates the vector. </p>
+<hr />
+<p>Updated on 2025-05-18 at 19:18:06 +0200</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

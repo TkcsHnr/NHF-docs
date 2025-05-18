@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>ShapeCollection - Síkidomok dokumentáció</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "ShapeCollection";
+        var mkdocs_page_input_path = "Classes\\class_shape_collection.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Síkidomok dokumentáció
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index_classes/">Classes</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index_namespaces/">Namespaces</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Síkidomok dokumentáció</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">ShapeCollection</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="shapecollection">ShapeCollection</h1>
+<p>A container class for managing a collection of <a href="/Classes/class_shape/">Shape</a> pointers.  <a href="#detailed-description">More...</a></p>
+<p><code>#include &lt;shape_collection.h&gt;</code></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href="/Classes/class_shape_collection/#function-shapecollection">ShapeCollection</a></strong>()<br>Default constructor. Creates an empty collection.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/Classes/class_shape_collection/#function-shapecollection">ShapeCollection</a></strong>(size_t capacity)<br>Constructor with preallocated capacity.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/Classes/class_shape_collection/#function-shapecollection">ShapeCollection</a></strong>(const <a href="/Classes/class_shape_collection/">ShapeCollection</a> &amp; other)<br>Copy constructor.</td>
+</tr>
+<tr>
+<td><a href="/Classes/class_shape_collection/">ShapeCollection</a> &amp;</td>
+<td><strong><a href="/Classes/class_shape_collection/#function-operator=">operator=</a></strong>(const <a href="/Classes/class_shape_collection/">ShapeCollection</a> &amp; other)<br>Assignment operator.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/Classes/class_shape_collection/#function-push-back">push_back</a></strong>(<a href="/Classes/class_shape/">Shape</a> * shape)<br>Adds a shape pointer to the collection.</td>
+</tr>
+<tr>
+<td><a href="/Classes/class_shape/">Shape</a> *</td>
+<td><strong><a href="/Classes/class_shape_collection/#function-operator[]">operator[]</a></strong>(size_t idx)<br>Provides access to shape by index (non-const).</td>
+</tr>
+<tr>
+<td>const <a href="/Classes/class_shape/">Shape</a> *</td>
+<td><strong><a href="/Classes/class_shape_collection/#function-operator[]">operator[]</a></strong>(size_t idx) const<br>Provides access to shape by index (const).</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="/Classes/class_shape_collection/#function-capacity">capacity</a></strong>() const<br>Getter for capacity.</td>
+</tr>
+<tr>
+<td>size_t</td>
+<td><strong><a href="/Classes/class_shape_collection/#function-size">size</a></strong>() const<br>Getter for size.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/Classes/class_shape_collection/#function-printsvg">printSVG</a></strong>(std::ostream &amp; out) const<br>Outputs all shapes in the collection as SVG elements.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/Classes/class_shape_collection/#function-clear">clear</a></strong>()<br>Clears the collection.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/Classes/class_shape_collection/#function-~shapecollection">~ShapeCollection</a></strong>()<br>Destructor. Cleans up all dynamically allocated shapes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="detailed-description">Detailed Description</h2>
+<pre><code class="language-cpp">class ShapeCollection;
+</code></pre>
+<p>A container class for managing a collection of <a href="/Classes/class_shape/">Shape</a> pointers. </p>
+<p>Provides basic operations such as adding shapes, accessing by index, and exporting the collection as an SVG representation. </p>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-shapecollection">function ShapeCollection</h3>
+<pre><code class="language-cpp">ShapeCollection()
+</code></pre>
+<p>Default constructor. Creates an empty collection. </p>
+<h3 id="function-shapecollection_1">function ShapeCollection</h3>
+<pre><code class="language-cpp">ShapeCollection(
+    size_t capacity
+)
+</code></pre>
+<p>Constructor with preallocated capacity. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>capacity</strong> Initial capacity of the collection. </li>
+</ul>
+<h3 id="function-shapecollection_2">function ShapeCollection</h3>
+<pre><code class="language-cpp">ShapeCollection(
+    const ShapeCollection &amp; other
+)
+</code></pre>
+<p>Copy constructor. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>other</strong> The <a href="/Classes/class_shape_collection/">ShapeCollection</a> to copy from. </li>
+</ul>
+<h3 id="function-operator">function operator=</h3>
+<pre><code class="language-cpp">ShapeCollection &amp; operator=(
+    const ShapeCollection &amp; other
+)
+</code></pre>
+<p>Assignment operator. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>other</strong> The <a href="/Classes/class_shape_collection/">ShapeCollection</a> to copy from. </li>
+</ul>
+<p><strong>Return</strong>: Reference to this collection after assignment. </p>
+<h3 id="function-push_back">function push_back</h3>
+<pre><code class="language-cpp">void push_back(
+    Shape * shape
+)
+</code></pre>
+<p>Adds a shape pointer to the collection. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>shape</strong> Pointer to the shape to add. </li>
+</ul>
+<h3 id="function-operator_1">function operator[]</h3>
+<pre><code class="language-cpp">Shape * operator[](
+    size_t idx
+)
+</code></pre>
+<p>Provides access to shape by index (non-const). </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>idx</strong> Index of the shape. </li>
+</ul>
+<p><strong>Return</strong>: Pointer to the shape at the specified index. </p>
+<h3 id="function-operator_2">function operator[]</h3>
+<pre><code class="language-cpp">const Shape * operator[](
+    size_t idx
+) const
+</code></pre>
+<p>Provides access to shape by index (const). </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>idx</strong> Index of the shape. </li>
+</ul>
+<p><strong>Return</strong>: Const pointer to the shape at the specified index. </p>
+<h3 id="function-capacity">function capacity</h3>
+<pre><code class="language-cpp">size_t capacity() const
+</code></pre>
+<p>Getter for capacity. </p>
+<p><strong>Return</strong>: Max number of shapes the collection can hold. </p>
+<h3 id="function-size">function size</h3>
+<pre><code class="language-cpp">size_t size() const
+</code></pre>
+<p>Getter for size. </p>
+<p><strong>Return</strong>: Current number of stored shapes. </p>
+<h3 id="function-printsvg">function printSVG</h3>
+<pre><code class="language-cpp">void printSVG(
+    std::ostream &amp; out
+) const
+</code></pre>
+<p>Outputs all shapes in the collection as SVG elements. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>out</strong> Output stream to write the SVG content to. </li>
+</ul>
+<h3 id="function-clear">function clear</h3>
+<pre><code class="language-cpp">void clear()
+</code></pre>
+<p>Clears the collection. </p>
+<p>Deletes all <a href="/Classes/class_shape/">Shape</a> pointers and resets the collection. </p>
+<h3 id="function-shapecollection_3">function ~ShapeCollection</h3>
+<pre><code class="language-cpp">~ShapeCollection()
+</code></pre>
+<p>Destructor. Cleans up all dynamically allocated shapes. </p>
+<hr />
+<p>Updated on 2025-05-18 at 19:18:06 +0200</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

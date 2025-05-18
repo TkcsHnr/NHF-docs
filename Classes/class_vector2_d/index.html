@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Vector2D - Síkidomok dokumentáció</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Vector2D";
+        var mkdocs_page_input_path = "Classes\\class_vector2_d.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Síkidomok dokumentáció
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index_classes/">Classes</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index_namespaces/">Namespaces</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Síkidomok dokumentáció</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Vector2D</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="vector2d">Vector2D</h1>
+<p>A class representing a 2D vector with basic operations. </p>
+<p><code>#include &lt;vector2D.h&gt;</code></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href="/Classes/class_vector2_d/#function-vector2d">Vector2D</a></strong>()<br>Default constructor. Initializes vector to (0,0).</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/Classes/class_vector2_d/#function-vector2d">Vector2D</a></strong>(double x, double y)<br>Constructs a vector with the specified x and y components.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/Classes/class_vector2_d/#function-vector2d">Vector2D</a></strong>(const <a href="/Classes/class_vector2_d/">Vector2D</a> &amp; other)<br>Copy constructor.</td>
+</tr>
+<tr>
+<td>double</td>
+<td><strong><a href="/Classes/class_vector2_d/#function-abs">abs</a></strong>() const<br>Calculates the magnitude (length) of the vector.</td>
+</tr>
+<tr>
+<td>double</td>
+<td><strong><a href="/Classes/class_vector2_d/#function-distance">distance</a></strong>(const <a href="/Classes/class_vector2_d/">Vector2D</a> &amp; other) const<br>Calculates the Euclidean distance to another vector.</td>
+</tr>
+<tr>
+<td><a href="/Classes/class_vector2_d/">Vector2D</a></td>
+<td><strong><a href="/Classes/class_vector2_d/#function-operator+">operator+</a></strong>(const <a href="/Classes/class_vector2_d/">Vector2D</a> &amp; other) const<br>Adds two vectors.</td>
+</tr>
+<tr>
+<td><a href="/Classes/class_vector2_d/">Vector2D</a></td>
+<td><strong><a href="/Classes/class_vector2_d/#function-operator-">operator-</a></strong>(const <a href="/Classes/class_vector2_d/">Vector2D</a> &amp; other) const<br>Subtracts one vector from another.</td>
+</tr>
+<tr>
+<td><a href="/Classes/class_vector2_d/">Vector2D</a></td>
+<td><strong><a href="/Classes/class_vector2_d/#function-operator*">operator*</a></strong>(double scalar) const<br>Multiplies the vector by a scalar.</td>
+</tr>
+<tr>
+<td><a href="/Classes/class_vector2_d/">Vector2D</a> &amp;</td>
+<td><strong><a href="/Classes/class_vector2_d/#function-operator=">operator=</a></strong>(const <a href="/Classes/class_vector2_d/">Vector2D</a> &amp; other)<br>Assignment operator.</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/Classes/class_vector2_d/#function-operator==">operator==</a></strong>(const <a href="/Classes/class_vector2_d/">Vector2D</a> &amp; other) const<br>Equality comparison operator.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/Classes/class_vector2_d/#function-rotate">rotate</a></strong>(const <a href="/Classes/class_vector2_d/">Vector2D</a> &amp; center, double angle)<br>Rotates the vector around a given center by a specified angle.</td>
+</tr>
+<tr>
+<td>double</td>
+<td><strong><a href="/Classes/class_vector2_d/#function-dot">dot</a></strong>(const <a href="/Classes/class_vector2_d/">Vector2D</a> &amp; other) const<br>Calculates the dot product with another vector.</td>
+</tr>
+<tr>
+<td><a href="/Classes/class_vector2_d/">Vector2D</a></td>
+<td><strong><a href="/Classes/class_vector2_d/#function-closestpointonsegment">closestPointOnSegment</a></strong>(const <a href="/Classes/class_vector2_d/">Vector2D</a> &amp; v1, const <a href="/Classes/class_vector2_d/">Vector2D</a> &amp; v2) const<br>Finds the closest point on a line segment to this point.</td>
+</tr>
+<tr>
+<td>double</td>
+<td><strong><a href="/Classes/class_vector2_d/#function-getx">getX</a></strong>() const<br>Getter for X component of the vector.</td>
+</tr>
+<tr>
+<td>double</td>
+<td><strong><a href="/Classes/class_vector2_d/#function-gety">getY</a></strong>() const<br>Getter for Y component of the vector.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="friends">Friends</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>std::istream &amp;</td>
+<td><strong><a href="/Classes/class_vector2_d/#friend-operator&gt;&gt;">operator&gt;&gt;</a></strong>(std::istream &amp; is, <a href="/Classes/class_vector2_d/">Vector2D</a> &amp; vec) <br>Input stream operator for reading a vector.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-vector2d">function Vector2D</h3>
+<pre><code class="language-cpp">Vector2D()
+</code></pre>
+<p>Default constructor. Initializes vector to (0,0). </p>
+<h3 id="function-vector2d_1">function Vector2D</h3>
+<pre><code class="language-cpp">Vector2D(
+    double x,
+    double y
+)
+</code></pre>
+<p>Constructs a vector with the specified x and y components. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>x</strong> X component of the vector. </li>
+<li><strong>y</strong> Y component of the vector. </li>
+</ul>
+<h3 id="function-vector2d_2">function Vector2D</h3>
+<pre><code class="language-cpp">Vector2D(
+    const Vector2D &amp; other
+)
+</code></pre>
+<p>Copy constructor. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>other</strong> Another <a href="/Classes/class_vector2_d/">Vector2D</a> object to copy from. </li>
+</ul>
+<h3 id="function-abs">function abs</h3>
+<pre><code class="language-cpp">double abs() const
+</code></pre>
+<p>Calculates the magnitude (length) of the vector. </p>
+<p><strong>Return</strong>: The absolute value of the vector. </p>
+<h3 id="function-distance">function distance</h3>
+<pre><code class="language-cpp">double distance(
+    const Vector2D &amp; other
+) const
+</code></pre>
+<p>Calculates the Euclidean distance to another vector. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>other</strong> Another <a href="/Classes/class_vector2_d/">Vector2D</a> object. </li>
+</ul>
+<p><strong>Return</strong>: Distance between this vector and the other vector. </p>
+<h3 id="function-operator">function operator+</h3>
+<pre><code class="language-cpp">Vector2D operator+(
+    const Vector2D &amp; other
+) const
+</code></pre>
+<p>Adds two vectors. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>other</strong> The vector to add. </li>
+</ul>
+<p><strong>Return</strong>: A new <a href="/Classes/class_vector2_d/">Vector2D</a> which is the sum of the two vectors. </p>
+<h3 id="function-operator-">function operator-</h3>
+<pre><code class="language-cpp">Vector2D operator-(
+    const Vector2D &amp; other
+) const
+</code></pre>
+<p>Subtracts one vector from another. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>other</strong> The vector to subtract. </li>
+</ul>
+<p><strong>Return</strong>: A new <a href="/Classes/class_vector2_d/">Vector2D</a> which is the difference of the two vectors. </p>
+<h3 id="function-operator_1">function operator*</h3>
+<pre><code class="language-cpp">Vector2D operator*(
+    double scalar
+) const
+</code></pre>
+<p>Multiplies the vector by a scalar. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>scalar</strong> The scalar value. </li>
+</ul>
+<p><strong>Return</strong>: A new <a href="/Classes/class_vector2_d/">Vector2D</a> scaled by the given scalar. </p>
+<h3 id="function-operator_2">function operator=</h3>
+<pre><code class="language-cpp">Vector2D &amp; operator=(
+    const Vector2D &amp; other
+)
+</code></pre>
+<p>Assignment operator. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>other</strong> The vector to assign from. </li>
+</ul>
+<p><strong>Return</strong>: A reference to this vector after assignment. </p>
+<h3 id="function-operator_3">function operator==</h3>
+<pre><code class="language-cpp">bool operator==(
+    const Vector2D &amp; other
+) const
+</code></pre>
+<p>Equality comparison operator. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>other</strong> The vector to compare with. </li>
+</ul>
+<p><strong>Return</strong>: True if both vectors have the same components, false otherwise. </p>
+<h3 id="function-rotate">function rotate</h3>
+<pre><code class="language-cpp">void rotate(
+    const Vector2D &amp; center,
+    double angle
+)
+</code></pre>
+<p>Rotates the vector around a given center by a specified angle. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>center</strong> The point around which to rotate. </li>
+<li><strong>angle</strong> The angle in degrees. </li>
+</ul>
+<h3 id="function-dot">function dot</h3>
+<pre><code class="language-cpp">double dot(
+    const Vector2D &amp; other
+) const
+</code></pre>
+<p>Calculates the dot product with another vector. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>other</strong> The other vector. </li>
+</ul>
+<p><strong>Return</strong>: The dot product of the two vectors. </p>
+<h3 id="function-closestpointonsegment">function closestPointOnSegment</h3>
+<pre><code class="language-cpp">Vector2D closestPointOnSegment(
+    const Vector2D &amp; v1,
+    const Vector2D &amp; v2
+) const
+</code></pre>
+<p>Finds the closest point on a line segment to this point. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>v1</strong> One endpoint of the segment. </li>
+<li><strong>v2</strong> Other endpoint of the segment. </li>
+</ul>
+<p><strong>Return</strong>: The closest point on the segment to this point. </p>
+<h3 id="function-getx">function getX</h3>
+<pre><code class="language-cpp">double getX() const
+</code></pre>
+<p>Getter for X component of the vector. </p>
+<p><strong>Return</strong>: The X value. </p>
+<h3 id="function-gety">function getY</h3>
+<pre><code class="language-cpp">double getY() const
+</code></pre>
+<p>Getter for Y component of the vector. </p>
+<p><strong>Return</strong>: The Y value. </p>
+<h2 id="friends_1">Friends</h2>
+<h3 id="friend-operator">friend operator&gt;&gt;</h3>
+<pre><code class="language-cpp">friend std::istream &amp; operator&gt;&gt;(
+    std::istream &amp; is,
+
+    Vector2D &amp; vec
+);
+</code></pre>
+<p>Input stream operator for reading a vector. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>is</strong> Input stream. </li>
+<li><strong>vec</strong> The vector to read into. </li>
+</ul>
+<p><strong>Return</strong>: Reference to the input stream. </p>
+<hr />
+<p>Updated on 2025-05-18 at 19:18:06 +0200</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

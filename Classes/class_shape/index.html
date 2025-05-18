@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Shape - Síkidomok dokumentáció</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Shape";
+        var mkdocs_page_input_path = "Classes\\class_shape.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Síkidomok dokumentáció
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index_classes/">Classes</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index_namespaces/">Namespaces</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Síkidomok dokumentáció</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Shape</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="shape">Shape</h1>
+<p>Abstract base class for geometric shapes.  <a href="#detailed-description">More...</a></p>
+<p><code>#include &lt;circle.h&gt;</code></p>
+<p>Inherited by <a href="/Classes/class_circle/">Circle</a>, <a href="/Classes/class_polygon/">Polygon</a></p>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>virtual bool</td>
+<td><strong><a href="/Classes/class_shape/#function-containspoint">containsPoint</a></strong>(const <a href="/Classes/class_vector2_d/">Vector2D</a> &amp; point) const =0<br>Checks whether the given point lies within the shape.</td>
+</tr>
+<tr>
+<td>virtual bool</td>
+<td><strong><a href="/Classes/class_shape/#function-containedbycircle">containedByCircle</a></strong>(const <a href="/Classes/class_vector2_d/">Vector2D</a> &amp; center, double radius) const =0<br>Checks whether the shape is fully contained within a circle.</td>
+</tr>
+<tr>
+<td>virtual bool</td>
+<td><strong><a href="/Classes/class_shape/#function-intersectscircle">intersectsCircle</a></strong>(const <a href="/Classes/class_vector2_d/">Vector2D</a> &amp; center, double radius) const =0<br>Checks whether the shape intersects a circle.</td>
+</tr>
+<tr>
+<td>virtual double</td>
+<td><strong><a href="/Classes/class_shape/#function-perimeter">perimeter</a></strong>() const =0<br>Returns the perimeter of the shape.</td>
+</tr>
+<tr>
+<td>virtual double</td>
+<td><strong><a href="/Classes/class_shape/#function-area">area</a></strong>() const =0<br>Returns the area of the shape.</td>
+</tr>
+<tr>
+<td>virtual void</td>
+<td><strong><a href="/Classes/class_shape/#function-rotate">rotate</a></strong>(double angle) =0<br>Rotates the shape by a specified angle around its centroid.</td>
+</tr>
+<tr>
+<td>virtual void</td>
+<td><strong><a href="/Classes/class_shape/#function-move">move</a></strong>(const <a href="/Classes/class_vector2_d/">Vector2D</a> &amp; offset) =0<br>Moves the shape by an offset vector.</td>
+</tr>
+<tr>
+<td>virtual <a href="/Classes/struct_bounding_box/">BoundingBox</a></td>
+<td><strong><a href="/Classes/class_shape/#function-getboundingbox">getBoundingBox</a></strong>() const =0<br>Returns the bounding box of the shape.</td>
+</tr>
+<tr>
+<td>virtual string</td>
+<td><strong><a href="/Classes/class_shape/#function-generatesvg">generateSVG</a></strong>() const =0<br>Generates an SVG string representation of the shape.</td>
+</tr>
+<tr>
+<td>virtual <a href="/Classes/class_shape/">Shape</a> *</td>
+<td><strong><a href="/Classes/class_shape/#function-clone">clone</a></strong>() const =0<br>Creates a deep copy of the shape.</td>
+</tr>
+<tr>
+<td>virtual</td>
+<td><strong><a href="/Classes/class_shape/#function-~shape">~Shape</a></strong>() =default<br>Virtual destructor.</td>
+</tr>
+<tr>
+<td>string</td>
+<td><strong><a href="/Classes/class_shape/#function-getfillcolor">getFillColor</a></strong>()<br>Getter for fill color.</td>
+</tr>
+<tr>
+<td>string</td>
+<td><strong><a href="/Classes/class_shape/#function-getbordercolor">getBorderColor</a></strong>()<br>Getter for border color.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-functions">Protected Functions</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href="/Classes/class_shape/#function-shape">Shape</a></strong>()<br>Protected default constructor.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/Classes/class_shape/#function-shape">Shape</a></strong>(string fillColor, string borderColor)<br>Constructs a shape with specific fill and border colors.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="protected-attributes">Protected Attributes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>string</td>
+<td><strong><a href="/Classes/class_shape/#variable-fillcolor">fillColor</a></strong></td>
+</tr>
+<tr>
+<td>string</td>
+<td><strong><a href="/Classes/class_shape/#variable-bordercolor">borderColor</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="detailed-description">Detailed Description</h2>
+<pre><code class="language-cpp">class Shape;
+</code></pre>
+<p>Abstract base class for geometric shapes. </p>
+<p>Represents a circle shape defined by a center point and radius.</p>
+<p>Defines a common interface for operations like area, perimeter, transformation, SVG export, and collision detection. </p>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-containspoint">function containsPoint</h3>
+<pre><code class="language-cpp">virtual bool containsPoint(
+    const Vector2D &amp; point
+) const =0
+</code></pre>
+<p>Checks whether the given point lies within the shape. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>point</strong> The point to test. </li>
+</ul>
+<p><strong>Return</strong>: True if the point is inside the shape, false otherwise. </p>
+<p><strong>Reimplemented by</strong>: <a href="/Classes/class_circle/#function-containspoint">Circle::containsPoint</a>, <a href="/Classes/class_polygon/#function-containspoint">Polygon::containsPoint</a></p>
+<h3 id="function-containedbycircle">function containedByCircle</h3>
+<pre><code class="language-cpp">virtual bool containedByCircle(
+    const Vector2D &amp; center,
+    double radius
+) const =0
+</code></pre>
+<p>Checks whether the shape is fully contained within a circle. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>center</strong> Center of the circle. </li>
+<li><strong>radius</strong> Radius of the circle. </li>
+</ul>
+<p><strong>Return</strong>: True if the shape lies entirely within the circle. </p>
+<p><strong>Reimplemented by</strong>: <a href="/Classes/class_circle/#function-containedbycircle">Circle::containedByCircle</a>, <a href="/Classes/class_polygon/#function-containedbycircle">Polygon::containedByCircle</a></p>
+<h3 id="function-intersectscircle">function intersectsCircle</h3>
+<pre><code class="language-cpp">virtual bool intersectsCircle(
+    const Vector2D &amp; center,
+    double radius
+) const =0
+</code></pre>
+<p>Checks whether the shape intersects a circle. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>center</strong> Center of the circle. </li>
+<li><strong>radius</strong> Radius of the circle. </li>
+</ul>
+<p><strong>Return</strong>: True if the shape and circle overlap. </p>
+<p><strong>Reimplemented by</strong>: <a href="/Classes/class_circle/#function-intersectscircle">Circle::intersectsCircle</a>, <a href="/Classes/class_polygon/#function-intersectscircle">Polygon::intersectsCircle</a></p>
+<h3 id="function-perimeter">function perimeter</h3>
+<pre><code class="language-cpp">virtual double perimeter() const =0
+</code></pre>
+<p>Returns the perimeter of the shape. </p>
+<p><strong>Return</strong>: Perimeter. </p>
+<p><strong>Reimplemented by</strong>: <a href="/Classes/class_circle/#function-perimeter">Circle::perimeter</a>, <a href="/Classes/class_polygon/#function-perimeter">Polygon::perimeter</a>, <a href="/Classes/class_regular_polygon/#function-perimeter">RegularPolygon::perimeter</a></p>
+<h3 id="function-area">function area</h3>
+<pre><code class="language-cpp">virtual double area() const =0
+</code></pre>
+<p>Returns the area of the shape. </p>
+<p><strong>Return</strong>: Area. </p>
+<p><strong>Reimplemented by</strong>: <a href="/Classes/class_circle/#function-area">Circle::area</a>, <a href="/Classes/class_polygon/#function-area">Polygon::area</a>, <a href="/Classes/class_regular_polygon/#function-area">RegularPolygon::area</a></p>
+<h3 id="function-rotate">function rotate</h3>
+<pre><code class="language-cpp">virtual void rotate(
+    double angle
+) =0
+</code></pre>
+<p>Rotates the shape by a specified angle around its centroid. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>angle</strong> Rotation angle in degrees. </li>
+</ul>
+<p><strong>Reimplemented by</strong>: <a href="/Classes/class_circle/#function-rotate">Circle::rotate</a>, <a href="/Classes/class_polygon/#function-rotate">Polygon::rotate</a></p>
+<h3 id="function-move">function move</h3>
+<pre><code class="language-cpp">virtual void move(
+    const Vector2D &amp; offset
+) =0
+</code></pre>
+<p>Moves the shape by an offset vector. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>offset</strong> The offset vector. </li>
+</ul>
+<p><strong>Reimplemented by</strong>: <a href="/Classes/class_circle/#function-move">Circle::move</a>, <a href="/Classes/class_polygon/#function-move">Polygon::move</a></p>
+<h3 id="function-getboundingbox">function getBoundingBox</h3>
+<pre><code class="language-cpp">virtual BoundingBox getBoundingBox() const =0
+</code></pre>
+<p>Returns the bounding box of the shape. </p>
+<p><strong>Return</strong>: <a href="/Classes/struct_bounding_box/">BoundingBox</a>. </p>
+<p><strong>Reimplemented by</strong>: <a href="/Classes/class_circle/#function-getboundingbox">Circle::getBoundingBox</a>, <a href="/Classes/class_polygon/#function-getboundingbox">Polygon::getBoundingBox</a></p>
+<h3 id="function-generatesvg">function generateSVG</h3>
+<pre><code class="language-cpp">virtual string generateSVG() const =0
+</code></pre>
+<p>Generates an SVG string representation of the shape. </p>
+<p><strong>Return</strong>: A string containing SVG markup for the shape. </p>
+<p><strong>Reimplemented by</strong>: <a href="/Classes/class_circle/#function-generatesvg">Circle::generateSVG</a>, <a href="/Classes/class_polygon/#function-generatesvg">Polygon::generateSVG</a></p>
+<h3 id="function-clone">function clone</h3>
+<pre><code class="language-cpp">virtual Shape * clone() const =0
+</code></pre>
+<p>Creates a deep copy of the shape. </p>
+<p><strong>Return</strong>: A pointer to a new <a href="/Classes/class_shape/">Shape</a> object. </p>
+<p><strong>Reimplemented by</strong>: <a href="/Classes/class_circle/#function-clone">Circle::clone</a>, <a href="/Classes/class_polygon/#function-clone">Polygon::clone</a>, <a href="/Classes/class_regular_polygon/#function-clone">RegularPolygon::clone</a></p>
+<h3 id="function-shape">function ~Shape</h3>
+<pre><code class="language-cpp">virtual ~Shape() =default
+</code></pre>
+<p>Virtual destructor. </p>
+<h3 id="function-getfillcolor">function getFillColor</h3>
+<pre><code class="language-cpp">string getFillColor()
+</code></pre>
+<p>Getter for fill color. </p>
+<p><strong>Return</strong>: Fill color as a string. </p>
+<h3 id="function-getbordercolor">function getBorderColor</h3>
+<pre><code class="language-cpp">string getBorderColor()
+</code></pre>
+<p>Getter for border color. </p>
+<p><strong>Return</strong>: Border color as a string. </p>
+<h2 id="protected-functions-documentation">Protected Functions Documentation</h2>
+<h3 id="function-shape_1">function Shape</h3>
+<pre><code class="language-cpp">Shape()
+</code></pre>
+<p>Protected default constructor. </p>
+<h3 id="function-shape_2">function Shape</h3>
+<pre><code class="language-cpp">Shape(
+    string fillColor,
+    string borderColor
+)
+</code></pre>
+<p>Constructs a shape with specific fill and border colors. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>fillColor</strong> Fill color of the shape. </li>
+<li><strong>borderColor</strong> Border (stroke) color of the shape. </li>
+</ul>
+<h2 id="protected-attributes-documentation">Protected Attributes Documentation</h2>
+<h3 id="variable-fillcolor">variable fillColor</h3>
+<pre><code class="language-cpp">string fillColor;
+</code></pre>
+<p>Fill color for SVG rendering </p>
+<h3 id="variable-bordercolor">variable borderColor</h3>
+<pre><code class="language-cpp">string borderColor;
+</code></pre>
+<p>Border color for SVG rendering </p>
+<hr />
+<p>Updated on 2025-05-18 at 19:18:06 +0200</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
