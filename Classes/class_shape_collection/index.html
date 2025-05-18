@@ -126,7 +126,7 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="shapecollection">ShapeCollection</h1>
-<p>A container class for managing a collection of <a href="Classes/class_shape/">Shape</a> pointers.  <a href="#detailed-description">More...</a></p>
+<p>A container class for managing a collection of <a href="/NHF-docs/Classes/class_shape/">Shape</a> pointers.  <a href="#detailed-description">More...</a></p>
 <p><code>#include &lt;shape_collection.h&gt;</code></p>
 <h2 id="public-functions">Public Functions</h2>
 <table>
@@ -139,58 +139,58 @@
 <tbody>
 <tr>
 <td></td>
-<td><strong><a href="Classes/class_shape_collection/#function-shapecollection">ShapeCollection</a></strong>()<br>Default constructor. Creates an empty collection.</td>
+<td><strong><a href="/NHF-docs/Classes/class_shape_collection/#function-shapecollection">ShapeCollection</a></strong>()<br>Default constructor. Creates an empty collection.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="Classes/class_shape_collection/#function-shapecollection">ShapeCollection</a></strong>(size_t capacity)<br>Constructor with preallocated capacity.</td>
+<td><strong><a href="/NHF-docs/Classes/class_shape_collection/#function-shapecollection">ShapeCollection</a></strong>(size_t capacity)<br>Constructor with preallocated capacity.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="Classes/class_shape_collection/#function-shapecollection">ShapeCollection</a></strong>(const <a href="Classes/class_shape_collection/">ShapeCollection</a> &amp; other)<br>Copy constructor.</td>
+<td><strong><a href="/NHF-docs/Classes/class_shape_collection/#function-shapecollection">ShapeCollection</a></strong>(const <a href="/NHF-docs/Classes/class_shape_collection/">ShapeCollection</a> &amp; other)<br>Copy constructor.</td>
 </tr>
 <tr>
-<td><a href="Classes/class_shape_collection/">ShapeCollection</a> &amp;</td>
-<td><strong><a href="Classes/class_shape_collection/#function-operator=">operator=</a></strong>(const <a href="Classes/class_shape_collection/">ShapeCollection</a> &amp; other)<br>Assignment operator.</td>
+<td><a href="/NHF-docs/Classes/class_shape_collection/">ShapeCollection</a> &amp;</td>
+<td><strong><a href="/NHF-docs/Classes/class_shape_collection/#function-operator=">operator=</a></strong>(const <a href="/NHF-docs/Classes/class_shape_collection/">ShapeCollection</a> &amp; other)<br>Assignment operator.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="Classes/class_shape_collection/#function-push-back">push_back</a></strong>(<a href="Classes/class_shape/">Shape</a> * shape)<br>Adds a shape pointer to the collection.</td>
+<td><strong><a href="/NHF-docs/Classes/class_shape_collection/#function-push-back">push_back</a></strong>(<a href="/NHF-docs/Classes/class_shape/">Shape</a> * shape)<br>Adds a shape pointer to the collection.</td>
 </tr>
 <tr>
-<td><a href="Classes/class_shape/">Shape</a> *</td>
-<td><strong><a href="Classes/class_shape_collection/#function-operator[]">operator[]</a></strong>(size_t idx)<br>Provides access to shape by index (non-const).</td>
+<td><a href="/NHF-docs/Classes/class_shape/">Shape</a> *</td>
+<td><strong><a href="/NHF-docs/Classes/class_shape_collection/#function-operator[]">operator[]</a></strong>(size_t idx)<br>Provides access to shape by index (non-const).</td>
 </tr>
 <tr>
-<td>const <a href="Classes/class_shape/">Shape</a> *</td>
-<td><strong><a href="Classes/class_shape_collection/#function-operator[]">operator[]</a></strong>(size_t idx) const<br>Provides access to shape by index (const).</td>
+<td>const <a href="/NHF-docs/Classes/class_shape/">Shape</a> *</td>
+<td><strong><a href="/NHF-docs/Classes/class_shape_collection/#function-operator[]">operator[]</a></strong>(size_t idx) const<br>Provides access to shape by index (const).</td>
 </tr>
 <tr>
 <td>size_t</td>
-<td><strong><a href="Classes/class_shape_collection/#function-capacity">capacity</a></strong>() const<br>Getter for capacity.</td>
+<td><strong><a href="/NHF-docs/Classes/class_shape_collection/#function-capacity">capacity</a></strong>() const<br>Getter for capacity.</td>
 </tr>
 <tr>
 <td>size_t</td>
-<td><strong><a href="Classes/class_shape_collection/#function-size">size</a></strong>() const<br>Getter for size.</td>
+<td><strong><a href="/NHF-docs/Classes/class_shape_collection/#function-size">size</a></strong>() const<br>Getter for size.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="Classes/class_shape_collection/#function-printsvg">printSVG</a></strong>(std::ostream &amp; out) const<br>Outputs all shapes in the collection as SVG elements.</td>
+<td><strong><a href="/NHF-docs/Classes/class_shape_collection/#function-printsvg">printSVG</a></strong>(std::ostream &amp; out) const<br>Outputs all shapes in the collection as SVG elements.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="Classes/class_shape_collection/#function-clear">clear</a></strong>()<br>Clears the collection.</td>
+<td><strong><a href="/NHF-docs/Classes/class_shape_collection/#function-clear">clear</a></strong>()<br>Clears the collection.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="Classes/class_shape_collection/#function-~shapecollection">~ShapeCollection</a></strong>()<br>Destructor. Cleans up all dynamically allocated shapes.</td>
+<td><strong><a href="/NHF-docs/Classes/class_shape_collection/#function-~shapecollection">~ShapeCollection</a></strong>()<br>Destructor. Cleans up all dynamically allocated shapes.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="detailed-description">Detailed Description</h2>
 <pre><code class="language-cpp">class ShapeCollection;
 </code></pre>
-<p>A container class for managing a collection of <a href="Classes/class_shape/">Shape</a> pointers. </p>
+<p>A container class for managing a collection of <a href="/NHF-docs/Classes/class_shape/">Shape</a> pointers. </p>
 <p>Provides basic operations such as adding shapes, accessing by index, and exporting the collection as an SVG representation. </p>
 <h2 id="public-functions-documentation">Public Functions Documentation</h2>
 <h3 id="function-shapecollection">function ShapeCollection</h3>
@@ -215,7 +215,7 @@
 <p>Copy constructor. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
-<li><strong>other</strong> The <a href="Classes/class_shape_collection/">ShapeCollection</a> to copy from. </li>
+<li><strong>other</strong> The <a href="/NHF-docs/Classes/class_shape_collection/">ShapeCollection</a> to copy from. </li>
 </ul>
 <h3 id="function-operator">function operator=</h3>
 <pre><code class="language-cpp">ShapeCollection &amp; operator=(
@@ -225,7 +225,7 @@
 <p>Assignment operator. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
-<li><strong>other</strong> The <a href="Classes/class_shape_collection/">ShapeCollection</a> to copy from. </li>
+<li><strong>other</strong> The <a href="/NHF-docs/Classes/class_shape_collection/">ShapeCollection</a> to copy from. </li>
 </ul>
 <p><strong>Return</strong>: Reference to this collection after assignment. </p>
 <h3 id="function-push_back">function push_back</h3>
@@ -284,13 +284,13 @@
 <pre><code class="language-cpp">void clear()
 </code></pre>
 <p>Clears the collection. </p>
-<p>Deletes all <a href="Classes/class_shape/">Shape</a> pointers and resets the collection. </p>
+<p>Deletes all <a href="/NHF-docs/Classes/class_shape/">Shape</a> pointers and resets the collection. </p>
 <h3 id="function-shapecollection_3">function ~ShapeCollection</h3>
 <pre><code class="language-cpp">~ShapeCollection()
 </code></pre>
 <p>Destructor. Cleans up all dynamically allocated shapes. </p>
 <hr />
-<p>Updated on 2025-05-18 at 20:44:08 +0200</p>
+<p>Updated on 2025-05-18 at 20:45:48 +0200</p>
               
             </div>
           </div><footer>
