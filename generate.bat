@@ -1,0 +1,1 @@
+.\doxybook2.exe --input ..\doxygen\xml --output .\docs --config .\.doxybooks\config.json

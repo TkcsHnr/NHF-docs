@@ -1,0 +1,7 @@
+site_name: Síkidomok dokumentáció
+theme:
+  name: readthedocs
+
+nav:
+  - Classes: index_classes.md
+  - Namespaces: index_namespaces.md
