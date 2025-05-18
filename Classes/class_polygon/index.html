@@ -154,8 +154,8 @@
                 <h1 id="polygon">Polygon</h1>
 <p>Represents a polygon shape defined by a list of 2D vertices. </p>
 <p><code>#include &lt;polygon.h&gt;</code></p>
-<p>Inherits from <a href="NHF-docs/Classes/class_shape/">Shape</a></p>
-<p>Inherited by <a href="NHF-docs/Classes/class_regular_polygon/">RegularPolygon</a></p>
+<p>Inherits from <a href="Classes/class_shape/">Shape</a></p>
+<p>Inherited by <a href="Classes/class_regular_polygon/">RegularPolygon</a></p>
 <h2 id="public-functions">Public Functions</h2>
 <table>
 <thead>
@@ -167,71 +167,71 @@
 <tbody>
 <tr>
 <td></td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-polygon">Polygon</a></strong>()<br>Default constructor. Creates an empty polygon.</td>
+<td><strong><a href="Classes/class_polygon/#function-polygon">Polygon</a></strong>()<br>Default constructor. Creates an empty polygon.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-polygon">Polygon</a></strong>(<a href="NHF-docs/Classes/classvector/">vector</a>&lt; <a href="NHF-docs/Classes/class_vector2_d/">Vector2D</a> &gt; vertices)<br>Constructs a polygon with a list of vertices.</td>
+<td><strong><a href="Classes/class_polygon/#function-polygon">Polygon</a></strong>(<a href="Classes/classvector/">vector</a>&lt; <a href="Classes/class_vector2_d/">Vector2D</a> &gt; vertices)<br>Constructs a polygon with a list of vertices.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-polygon">Polygon</a></strong>(<a href="NHF-docs/Classes/classvector/">vector</a>&lt; <a href="NHF-docs/Classes/class_vector2_d/">Vector2D</a> &gt; vertices, string fillColor, string borderColor)<br>Constructs a polygon with vertices and color settings.</td>
+<td><strong><a href="Classes/class_polygon/#function-polygon">Polygon</a></strong>(<a href="Classes/classvector/">vector</a>&lt; <a href="Classes/class_vector2_d/">Vector2D</a> &gt; vertices, string fillColor, string borderColor)<br>Constructs a polygon with vertices and color settings.</td>
 </tr>
 <tr>
 <td>virtual bool</td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-addpoint">addPoint</a></strong>(const <a href="NHF-docs/Classes/class_vector2_d/">Vector2D</a> &amp; point)<br>Adds a new vertex to the polygon.</td>
+<td><strong><a href="Classes/class_polygon/#function-addpoint">addPoint</a></strong>(const <a href="Classes/class_vector2_d/">Vector2D</a> &amp; point)<br>Adds a new vertex to the polygon.</td>
 </tr>
 <tr>
-<td>const <a href="NHF-docs/Classes/classvector/">vector</a>&lt; <a href="NHF-docs/Classes/class_vector2_d/">Vector2D</a> &gt;</td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-getpoints">getPoints</a></strong>() const<br>Getter for vertices (const).</td>
-</tr>
-<tr>
-<td>virtual bool</td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-containspoint">containsPoint</a></strong>(const <a href="NHF-docs/Classes/class_vector2_d/">Vector2D</a> &amp; point) const override<br>Checks whether the given point lies within the shape.</td>
+<td>const <a href="Classes/classvector/">vector</a>&lt; <a href="Classes/class_vector2_d/">Vector2D</a> &gt;</td>
+<td><strong><a href="Classes/class_polygon/#function-getpoints">getPoints</a></strong>() const<br>Getter for vertices (const).</td>
 </tr>
 <tr>
 <td>virtual bool</td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-containedbycircle">containedByCircle</a></strong>(const <a href="NHF-docs/Classes/class_vector2_d/">Vector2D</a> &amp; center, double radius) const override<br>Checks whether the shape is fully contained within a circle.</td>
+<td><strong><a href="Classes/class_polygon/#function-containspoint">containsPoint</a></strong>(const <a href="Classes/class_vector2_d/">Vector2D</a> &amp; point) const override<br>Checks whether the given point lies within the shape.</td>
 </tr>
 <tr>
 <td>virtual bool</td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-intersectscircle">intersectsCircle</a></strong>(const <a href="NHF-docs/Classes/class_vector2_d/">Vector2D</a> &amp; center, double radius) const override<br>Checks whether the shape intersects a circle.</td>
+<td><strong><a href="Classes/class_polygon/#function-containedbycircle">containedByCircle</a></strong>(const <a href="Classes/class_vector2_d/">Vector2D</a> &amp; center, double radius) const override<br>Checks whether the shape is fully contained within a circle.</td>
+</tr>
+<tr>
+<td>virtual bool</td>
+<td><strong><a href="Classes/class_polygon/#function-intersectscircle">intersectsCircle</a></strong>(const <a href="Classes/class_vector2_d/">Vector2D</a> &amp; center, double radius) const override<br>Checks whether the shape intersects a circle.</td>
 </tr>
 <tr>
 <td>virtual double</td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-perimeter">perimeter</a></strong>() const override<br>Returns the perimeter of the shape.</td>
+<td><strong><a href="Classes/class_polygon/#function-perimeter">perimeter</a></strong>() const override<br>Returns the perimeter of the shape.</td>
 </tr>
 <tr>
 <td>virtual double</td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-area">area</a></strong>() const override<br>Returns the area of the shape.</td>
+<td><strong><a href="Classes/class_polygon/#function-area">area</a></strong>() const override<br>Returns the area of the shape.</td>
 </tr>
 <tr>
 <td>virtual void</td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-rotate">rotate</a></strong>(double angle) override<br>Rotates the shape by a specified angle around its centroid.</td>
+<td><strong><a href="Classes/class_polygon/#function-rotate">rotate</a></strong>(double angle) override<br>Rotates the shape by a specified angle around its centroid.</td>
 </tr>
 <tr>
 <td>virtual void</td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-move">move</a></strong>(const <a href="NHF-docs/Classes/class_vector2_d/">Vector2D</a> &amp; offset) override<br>Moves the shape by an offset vector.</td>
+<td><strong><a href="Classes/class_polygon/#function-move">move</a></strong>(const <a href="Classes/class_vector2_d/">Vector2D</a> &amp; offset) override<br>Moves the shape by an offset vector.</td>
 </tr>
 <tr>
-<td><a href="NHF-docs/Classes/class_vector2_d/">Vector2D</a></td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-centroid">centroid</a></strong>() const<br>Computes the centroid (geometric center) of the polygon.</td>
+<td><a href="Classes/class_vector2_d/">Vector2D</a></td>
+<td><strong><a href="Classes/class_polygon/#function-centroid">centroid</a></strong>() const<br>Computes the centroid (geometric center) of the polygon.</td>
 </tr>
 <tr>
-<td>virtual <a href="NHF-docs/Classes/struct_bounding_box/">BoundingBox</a></td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-getboundingbox">getBoundingBox</a></strong>() const override<br>Returns the bounding box of the shape.</td>
+<td>virtual <a href="Classes/struct_bounding_box/">BoundingBox</a></td>
+<td><strong><a href="Classes/class_polygon/#function-getboundingbox">getBoundingBox</a></strong>() const override<br>Returns the bounding box of the shape.</td>
 </tr>
 <tr>
 <td>virtual string</td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-generatesvg">generateSVG</a></strong>() const override<br>Generates an SVG string representation of the shape.</td>
+<td><strong><a href="Classes/class_polygon/#function-generatesvg">generateSVG</a></strong>() const override<br>Generates an SVG string representation of the shape.</td>
 </tr>
 <tr>
-<td>virtual <a href="NHF-docs/Classes/class_shape/">Shape</a> *</td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-clone">clone</a></strong>() const override<br>Creates a deep copy of the shape.</td>
+<td>virtual <a href="Classes/class_shape/">Shape</a> *</td>
+<td><strong><a href="Classes/class_polygon/#function-clone">clone</a></strong>() const override<br>Creates a deep copy of the shape.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#function-~polygon">~Polygon</a></strong>()</td>
+<td><strong><a href="Classes/class_polygon/#function-~polygon">~Polygon</a></strong>()</td>
 </tr>
 </tbody>
 </table>
@@ -245,8 +245,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="NHF-docs/Classes/classvector/">vector</a>&lt; <a href="NHF-docs/Classes/class_vector2_d/">Vector2D</a> &gt;</td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#variable-vertices">vertices</a></strong></td>
+<td><a href="Classes/classvector/">vector</a>&lt; <a href="Classes/class_vector2_d/">Vector2D</a> &gt;</td>
+<td><strong><a href="Classes/class_polygon/#variable-vertices">vertices</a></strong></td>
 </tr>
 </tbody>
 </table>
@@ -261,12 +261,12 @@
 <tbody>
 <tr>
 <td>std::istream &amp;</td>
-<td><strong><a href="NHF-docs/Classes/class_polygon/#friend-operator&gt;&gt;">operator&gt;&gt;</a></strong>(std::istream &amp; is, <a href="NHF-docs/Classes/class_polygon/">Polygon</a> &amp; polygon)</td>
+<td><strong><a href="Classes/class_polygon/#friend-operator&gt;&gt;">operator&gt;&gt;</a></strong>(std::istream &amp; is, <a href="Classes/class_polygon/">Polygon</a> &amp; polygon)</td>
 </tr>
 </tbody>
 </table>
 <h2 id="additional-inherited-members">Additional inherited members</h2>
-<p><strong>Public Functions inherited from <a href="NHF-docs/Classes/class_shape/">Shape</a></strong></p>
+<p><strong>Public Functions inherited from <a href="Classes/class_shape/">Shape</a></strong></p>
 <table>
 <thead>
 <tr>
@@ -277,19 +277,19 @@
 <tbody>
 <tr>
 <td>virtual</td>
-<td><strong><a href="NHF-docs/Classes/class_shape/#function-~shape">~Shape</a></strong>() =default<br>Virtual destructor.</td>
+<td><strong><a href="Classes/class_shape/#function-~shape">~Shape</a></strong>() =default<br>Virtual destructor.</td>
 </tr>
 <tr>
 <td>string</td>
-<td><strong><a href="NHF-docs/Classes/class_shape/#function-getfillcolor">getFillColor</a></strong>()<br>Getter for fill color.</td>
+<td><strong><a href="Classes/class_shape/#function-getfillcolor">getFillColor</a></strong>()<br>Getter for fill color.</td>
 </tr>
 <tr>
 <td>string</td>
-<td><strong><a href="NHF-docs/Classes/class_shape/#function-getbordercolor">getBorderColor</a></strong>()<br>Getter for border color.</td>
+<td><strong><a href="Classes/class_shape/#function-getbordercolor">getBorderColor</a></strong>()<br>Getter for border color.</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Protected Functions inherited from <a href="NHF-docs/Classes/class_shape/">Shape</a></strong></p>
+<p><strong>Protected Functions inherited from <a href="Classes/class_shape/">Shape</a></strong></p>
 <table>
 <thead>
 <tr>
@@ -300,15 +300,15 @@
 <tbody>
 <tr>
 <td></td>
-<td><strong><a href="NHF-docs/Classes/class_shape/#function-shape">Shape</a></strong>()<br>Protected default constructor.</td>
+<td><strong><a href="Classes/class_shape/#function-shape">Shape</a></strong>()<br>Protected default constructor.</td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="NHF-docs/Classes/class_shape/#function-shape">Shape</a></strong>(string fillColor, string borderColor)<br>Constructs a shape with specific fill and border colors.</td>
+<td><strong><a href="Classes/class_shape/#function-shape">Shape</a></strong>(string fillColor, string borderColor)<br>Constructs a shape with specific fill and border colors.</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Protected Attributes inherited from <a href="NHF-docs/Classes/class_shape/">Shape</a></strong></p>
+<p><strong>Protected Attributes inherited from <a href="Classes/class_shape/">Shape</a></strong></p>
 <table>
 <thead>
 <tr>
@@ -319,11 +319,11 @@
 <tbody>
 <tr>
 <td>string</td>
-<td><strong><a href="NHF-docs/Classes/class_shape/#variable-fillcolor">fillColor</a></strong></td>
+<td><strong><a href="Classes/class_shape/#variable-fillcolor">fillColor</a></strong></td>
 </tr>
 <tr>
 <td>string</td>
-<td><strong><a href="NHF-docs/Classes/class_shape/#variable-bordercolor">borderColor</a></strong></td>
+<td><strong><a href="Classes/class_shape/#variable-bordercolor">borderColor</a></strong></td>
 </tr>
 </tbody>
 </table>
@@ -367,7 +367,7 @@
 <li><strong>point</strong> The point to add. </li>
 </ul>
 <p><strong>Return</strong>: True if added, false if not (repeated). </p>
-<p><strong>Reimplemented by</strong>: <a href="NHF-docs/Classes/class_regular_polygon/#function-addpoint">RegularPolygon::addPoint</a></p>
+<p><strong>Reimplemented by</strong>: <a href="Classes/class_regular_polygon/#function-addpoint">RegularPolygon::addPoint</a></p>
 <h3 id="function-getpoints">function getPoints</h3>
 <pre><code class="language-cpp">const vector&lt; Vector2D &gt; getPoints() const
 </code></pre>
@@ -384,7 +384,7 @@
 <li><strong>point</strong> The point to test. </li>
 </ul>
 <p><strong>Return</strong>: True if the point is inside the shape, false otherwise. </p>
-<p><strong>Reimplements</strong>: <a href="NHF-docs/Classes/class_shape/#function-containspoint">Shape::containsPoint</a></p>
+<p><strong>Reimplements</strong>: <a href="Classes/class_shape/#function-containspoint">Shape::containsPoint</a></p>
 <h3 id="function-containedbycircle">function containedByCircle</h3>
 <pre><code class="language-cpp">virtual bool containedByCircle(
     const Vector2D &amp; center,
@@ -398,7 +398,7 @@
 <li><strong>radius</strong> Radius of the circle. </li>
 </ul>
 <p><strong>Return</strong>: True if the shape lies entirely within the circle. </p>
-<p><strong>Reimplements</strong>: <a href="NHF-docs/Classes/class_shape/#function-containedbycircle">Shape::containedByCircle</a></p>
+<p><strong>Reimplements</strong>: <a href="Classes/class_shape/#function-containedbycircle">Shape::containedByCircle</a></p>
 <h3 id="function-intersectscircle">function intersectsCircle</h3>
 <pre><code class="language-cpp">virtual bool intersectsCircle(
     const Vector2D &amp; center,
@@ -412,21 +412,21 @@
 <li><strong>radius</strong> Radius of the circle. </li>
 </ul>
 <p><strong>Return</strong>: True if the shape and circle overlap. </p>
-<p><strong>Reimplements</strong>: <a href="NHF-docs/Classes/class_shape/#function-intersectscircle">Shape::intersectsCircle</a></p>
+<p><strong>Reimplements</strong>: <a href="Classes/class_shape/#function-intersectscircle">Shape::intersectsCircle</a></p>
 <h3 id="function-perimeter">function perimeter</h3>
 <pre><code class="language-cpp">virtual double perimeter() const override
 </code></pre>
 <p>Returns the perimeter of the shape. </p>
 <p><strong>Return</strong>: Perimeter. </p>
-<p><strong>Reimplements</strong>: <a href="NHF-docs/Classes/class_shape/#function-perimeter">Shape::perimeter</a></p>
-<p><strong>Reimplemented by</strong>: <a href="NHF-docs/Classes/class_regular_polygon/#function-perimeter">RegularPolygon::perimeter</a></p>
+<p><strong>Reimplements</strong>: <a href="Classes/class_shape/#function-perimeter">Shape::perimeter</a></p>
+<p><strong>Reimplemented by</strong>: <a href="Classes/class_regular_polygon/#function-perimeter">RegularPolygon::perimeter</a></p>
 <h3 id="function-area">function area</h3>
 <pre><code class="language-cpp">virtual double area() const override
 </code></pre>
 <p>Returns the area of the shape. </p>
 <p><strong>Return</strong>: Area. </p>
-<p><strong>Reimplements</strong>: <a href="NHF-docs/Classes/class_shape/#function-area">Shape::area</a></p>
-<p><strong>Reimplemented by</strong>: <a href="NHF-docs/Classes/class_regular_polygon/#function-area">RegularPolygon::area</a></p>
+<p><strong>Reimplements</strong>: <a href="Classes/class_shape/#function-area">Shape::area</a></p>
+<p><strong>Reimplemented by</strong>: <a href="Classes/class_regular_polygon/#function-area">RegularPolygon::area</a></p>
 <h3 id="function-rotate">function rotate</h3>
 <pre><code class="language-cpp">virtual void rotate(
     double angle
@@ -437,7 +437,7 @@
 <ul>
 <li><strong>angle</strong> Rotation angle in degrees. </li>
 </ul>
-<p><strong>Reimplements</strong>: <a href="NHF-docs/Classes/class_shape/#function-rotate">Shape::rotate</a></p>
+<p><strong>Reimplements</strong>: <a href="Classes/class_shape/#function-rotate">Shape::rotate</a></p>
 <h3 id="function-move">function move</h3>
 <pre><code class="language-cpp">virtual void move(
     const Vector2D &amp; offset
@@ -448,31 +448,31 @@
 <ul>
 <li><strong>offset</strong> The offset vector. </li>
 </ul>
-<p><strong>Reimplements</strong>: <a href="NHF-docs/Classes/class_shape/#function-move">Shape::move</a></p>
+<p><strong>Reimplements</strong>: <a href="Classes/class_shape/#function-move">Shape::move</a></p>
 <h3 id="function-centroid">function centroid</h3>
 <pre><code class="language-cpp">Vector2D centroid() const
 </code></pre>
 <p>Computes the centroid (geometric center) of the polygon. </p>
-<p><strong>Return</strong>: The centroid point as a <a href="NHF-docs/Classes/class_vector2_d/">Vector2D</a>. </p>
+<p><strong>Return</strong>: The centroid point as a <a href="Classes/class_vector2_d/">Vector2D</a>. </p>
 <h3 id="function-getboundingbox">function getBoundingBox</h3>
 <pre><code class="language-cpp">virtual BoundingBox getBoundingBox() const override
 </code></pre>
 <p>Returns the bounding box of the shape. </p>
-<p><strong>Return</strong>: <a href="NHF-docs/Classes/struct_bounding_box/">BoundingBox</a>. </p>
-<p><strong>Reimplements</strong>: <a href="NHF-docs/Classes/class_shape/#function-getboundingbox">Shape::getBoundingBox</a></p>
+<p><strong>Return</strong>: <a href="Classes/struct_bounding_box/">BoundingBox</a>. </p>
+<p><strong>Reimplements</strong>: <a href="Classes/class_shape/#function-getboundingbox">Shape::getBoundingBox</a></p>
 <h3 id="function-generatesvg">function generateSVG</h3>
 <pre><code class="language-cpp">virtual string generateSVG() const override
 </code></pre>
 <p>Generates an SVG string representation of the shape. </p>
 <p><strong>Return</strong>: A string containing SVG markup for the shape. </p>
-<p><strong>Reimplements</strong>: <a href="NHF-docs/Classes/class_shape/#function-generatesvg">Shape::generateSVG</a></p>
+<p><strong>Reimplements</strong>: <a href="Classes/class_shape/#function-generatesvg">Shape::generateSVG</a></p>
 <h3 id="function-clone">function clone</h3>
 <pre><code class="language-cpp">virtual Shape * clone() const override
 </code></pre>
 <p>Creates a deep copy of the shape. </p>
-<p><strong>Return</strong>: A pointer to a new <a href="NHF-docs/Classes/class_shape/">Shape</a> object. </p>
-<p><strong>Reimplements</strong>: <a href="NHF-docs/Classes/class_shape/#function-clone">Shape::clone</a></p>
-<p><strong>Reimplemented by</strong>: <a href="NHF-docs/Classes/class_regular_polygon/#function-clone">RegularPolygon::clone</a></p>
+<p><strong>Return</strong>: A pointer to a new <a href="Classes/class_shape/">Shape</a> object. </p>
+<p><strong>Reimplements</strong>: <a href="Classes/class_shape/#function-clone">Shape::clone</a></p>
+<p><strong>Reimplemented by</strong>: <a href="Classes/class_regular_polygon/#function-clone">RegularPolygon::clone</a></p>
 <h3 id="function-polygon_3">function ~Polygon</h3>
 <pre><code class="language-cpp">~Polygon()
 </code></pre>
@@ -490,7 +490,7 @@
 );
 </code></pre>
 <hr />
-<p>Updated on 2025-05-18 at 20:40:31 +0200</p>
+<p>Updated on 2025-05-18 at 20:42:09 +0200</p>
               
             </div>
           </div><footer>
